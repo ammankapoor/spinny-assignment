@@ -1,0 +1,35 @@
+.result-container {
+    display: flex;
+    height: 300px;
+    align-items: center;
+    overflow-y: hidden;
+    justify-content: center
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    min-width: 150px;
+    height:200px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.pic {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card-heading {
+    background: white;
+    border-radius: 5px;
+    padding:10px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.no-data-img {
+    height: 90%;
+}

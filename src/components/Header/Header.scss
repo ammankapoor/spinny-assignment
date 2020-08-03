@@ -1,0 +1,92 @@
+.container {
+  min-height: 200px;
+  color: #fff;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  font-size: 60px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 16px #888888;
+  justify-content: center;
+  color: #2e51a2;
+  font-weight: bolder;
+  margin-right: 40px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 60px;
+  }
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.img {
+  width: 40px;
+}
+
+.anchor {
+  margin-right: 0px;
+  margin-bottom: 5px;
+  &:last-child {
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 60px;
+  }
+}
+
+.menu-container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.overlay {
+    position: fixed;
+    z-index: 1;
+    top: 25%;
+    right: 0;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
