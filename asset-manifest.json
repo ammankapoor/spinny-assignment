@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/spinny-assignment/static/css/main.d9214cea.chunk.css",
+    "main.js": "/spinny-assignment/static/js/main.293dead6.chunk.js",
+    "main.js.map": "/spinny-assignment/static/js/main.293dead6.chunk.js.map",
+    "runtime-main.js": "/spinny-assignment/static/js/runtime-main.ab2d892f.js",
+    "runtime-main.js.map": "/spinny-assignment/static/js/runtime-main.ab2d892f.js.map",
+    "static/js/2.bf648f25.chunk.js": "/spinny-assignment/static/js/2.bf648f25.chunk.js",
+    "static/js/2.bf648f25.chunk.js.map": "/spinny-assignment/static/js/2.bf648f25.chunk.js.map",
+    "index.html": "/spinny-assignment/index.html",
+    "precache-manifest.773898662dce34780dca5259c9915b5a.js": "/spinny-assignment/precache-manifest.773898662dce34780dca5259c9915b5a.js",
+    "service-worker.js": "/spinny-assignment/service-worker.js",
+    "static/css/main.d9214cea.chunk.css.map": "/spinny-assignment/static/css/main.d9214cea.chunk.css.map",
+    "static/js/2.bf648f25.chunk.js.LICENSE.txt": "/spinny-assignment/static/js/2.bf648f25.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ab2d892f.js",
+    "static/js/2.bf648f25.chunk.js",
+    "static/css/main.d9214cea.chunk.css",
+    "static/js/main.293dead6.chunk.js"
+  ]
+}
