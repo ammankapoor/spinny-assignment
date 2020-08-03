@@ -21,7 +21,7 @@ const deviceType = utility.getDeviceType();
             <li>Debouncing used.</li>
             <li>Support Desktop and Mobile Both.</li>
         </ul>
-        <div>On th right corner of screen you can find my resume, linkedin and code repo link.</div>
+        <div>On the right corner of screen you can find my resume, linkedin and code repo link.</div>
     </div>
   );
 }

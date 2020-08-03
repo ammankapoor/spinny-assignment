@@ -27,7 +27,7 @@ function Header() {
               alt="linkedin"
             />
           </a>
-          <a href="https://github.com/ammankapoor" target="_blank" className='anchor'>
+          <a href="https://github.com/ammankapoor/spinny-assignment/tree/master" target="_blank" className='anchor'>
             <img
               className="img"
               src="https://cdn.icon-icons.com/icons2/1907/PNG/512/iconfinder-github-4555889_121361.png"
