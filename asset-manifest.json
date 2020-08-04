@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/spinny-assignment/static/css/main.d9214cea.chunk.css",
-    "main.js": "/spinny-assignment/static/js/main.1e2bf3de.chunk.js",
-    "main.js.map": "/spinny-assignment/static/js/main.1e2bf3de.chunk.js.map",
+    "main.js": "/spinny-assignment/static/js/main.67ccb926.chunk.js",
+    "main.js.map": "/spinny-assignment/static/js/main.67ccb926.chunk.js.map",
     "runtime-main.js": "/spinny-assignment/static/js/runtime-main.ab2d892f.js",
     "runtime-main.js.map": "/spinny-assignment/static/js/runtime-main.ab2d892f.js.map",
-    "static/js/2.bf648f25.chunk.js": "/spinny-assignment/static/js/2.bf648f25.chunk.js",
-    "static/js/2.bf648f25.chunk.js.map": "/spinny-assignment/static/js/2.bf648f25.chunk.js.map",
+    "static/js/2.237859b1.chunk.js": "/spinny-assignment/static/js/2.237859b1.chunk.js",
+    "static/js/2.237859b1.chunk.js.map": "/spinny-assignment/static/js/2.237859b1.chunk.js.map",
     "index.html": "/spinny-assignment/index.html",
-    "precache-manifest.d0107e650ee5072d9b766cb0eb77f1ef.js": "/spinny-assignment/precache-manifest.d0107e650ee5072d9b766cb0eb77f1ef.js",
+    "precache-manifest.b6d3b90568a435878f823ee7e1319c05.js": "/spinny-assignment/precache-manifest.b6d3b90568a435878f823ee7e1319c05.js",
     "service-worker.js": "/spinny-assignment/service-worker.js",
     "static/css/main.d9214cea.chunk.css.map": "/spinny-assignment/static/css/main.d9214cea.chunk.css.map",
-    "static/js/2.bf648f25.chunk.js.LICENSE.txt": "/spinny-assignment/static/js/2.bf648f25.chunk.js.LICENSE.txt"
+    "static/js/2.237859b1.chunk.js.LICENSE.txt": "/spinny-assignment/static/js/2.237859b1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ab2d892f.js",
-    "static/js/2.bf648f25.chunk.js",
+    "static/js/2.237859b1.chunk.js",
     "static/css/main.d9214cea.chunk.css",
-    "static/js/main.1e2bf3de.chunk.js"
+    "static/js/main.67ccb926.chunk.js"
   ]
 }
