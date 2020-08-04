@@ -20,6 +20,7 @@ const deviceType = utility.getDeviceType();
             <li>ES6 used.</li>
             <li>Debouncing used.</li>
             <li>Support Desktop and Mobile Both.</li>
+            <li>Infinite Scrolling with Intersection observer Used.</li>
         </ul>
         <div>On the right corner of screen you can find my resume, linkedin and code repo link.</div>
     </div>

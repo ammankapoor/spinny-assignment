@@ -1,10 +1,43 @@
-import React, { Fragment } from "react";
+import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
+import { useInView } from "react-intersection-observer"
 import "./ResultSection.scss";
 
-import { RESET_DATA } from "../../store/actions";
+import { RESET_DATA, SET_DATA } from "../../store/actions";
 
-function ResultSection({ data, fetchingData, fetchedSuccess }) {
+function ResultSection({ data, fetchingData, fetchedSuccess, searchValue, onSearchSuccess, lastPage }) {
+  const [pageNumber, setPageNumber] = useState(2);
+
+  const [loadMoreRef, inView] = useInView({
+    threshold: 0.5,
+  })
+
+  useEffect(()=>{
+    if(inView)
+    {
+      fetch(`https://api.jikan.moe/v3/search/anime?q=${searchValue}&limit=16&page=${pageNumber}`)
+      .then(response => response.json())
+      .then(result => {
+        const temp ={};
+        temp.results= [...data, ...result.results];
+        temp.last_page= result.last_page;
+         onSearchSuccess(temp);
+        if(result.last_page != pageNumber)
+          setPageNumber(pageNumber + 1);
+      })
+      .catch(error => {
+        console.error("Error:", error);
+      });
+    }
+  },[inView])
+
+  useEffect(()=>{
+      if(fetchingData)
+      {
+        setPageNumber(2);
+      }
+  },[fetchingData])
+
   return (
     <div
       className="search-container result-container"
@@ -16,10 +49,9 @@ function ResultSection({ data, fetchingData, fetchedSuccess }) {
           alt="loader"
         />
       )}
-      {fetchedSuccess && (
+      {fetchedSuccess && data && (
         <React.Fragment>
-          {data &&
-            data.map((data, index) => {
+          {data.map((data, index) => {
               return (
                 <a className="card" href={data.url} target="_blank" key={index}>
                   <img loading='lazy' className="pic" src={data.image_url} />
@@ -27,6 +59,7 @@ function ResultSection({ data, fetchingData, fetchedSuccess }) {
                 </a>
               );
             })}
+            {pageNumber <= lastPage && <img ref={loadMoreRef} src='https://mir-s3-cdn-cf.behance.net/project_modules/disp/dae67631234507.564a1d230a290.gif' alt='loader' />}
         </React.Fragment>
       )}
       {!fetchingData && data.length ===0 &&
@@ -40,13 +73,16 @@ const mapStateToProps = state => {
   return {
     data: state.data,
     fetchingData: state.fetchingData,
-    fetchedSuccess: state.fetchedSuccess
+    fetchedSuccess: state.fetchedSuccess,
+    searchValue: state.searchValue,
+    lastPage: state.lastPage
   };
 };
 
 const mapDisptachToProps = dispatch => {
   return {
-    onResetData: () => dispatch({ type: RESET_DATA })
+    onResetData: () => dispatch({ type: RESET_DATA }),
+    onSearchSuccess: (data) => dispatch({type:SET_DATA, data })
   };
 };
 
